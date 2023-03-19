@@ -83,7 +83,7 @@ nav>ul>li{
 header{
     height: calc(80vh - 3em);
     background-color: var(--header-bg);
-    background-image: url("laptop.webp");
+    background-image: url("../img/laptop.webp");
     background-position: right;
     background-repeat: no-repeat;
 }
