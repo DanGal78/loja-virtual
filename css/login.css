@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root{
+    --branca: #FFFFFF;
+    --danger: #ea0e0e;
+    --danger-hover: #ff5757;
+    --success: #008702;
+    --success-hover: #0ad00d;
+    --link-default:#52ccfc;
+    --link-default-hover: #00b7ff;
+    --cinza-1: #e4e4e4;
+    --cinza-2: #c3c3c3;
+    --conza-3: #f1f1f1;
+    --verde-1: #
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body{
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: var(--branca);
+}
+
+h1{
+    color: #04AA6D;
+    text-align: center;
+}
+
+input{
+    height: 30px;
+    border: none;
+    background-color:var(--cinza-1);
+    border-radius: 7px;
+    width: 100%;
+    padding: 10px;
+}
+
+.form-row{
+    margin-top: 15px;
+    width: 100%;
+}
+
+label{
+    display: block;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+.button{
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+}
+.button-success{
+    background-color: var(--success);
+    color: var(--branca);
+}
+
+.button-success:hover{
+    background-color: var(--success-hover);
+    transition: background-color 0.5s ease-in 100ms;
+
+}
+.button-danger{
+    background-color: var(--danger);
+    color: var(--branca)
+}
+.button-danger:hover{
+    background-color: var(--danger-hover);
+    color: var(--branca);
+    transition: background-color 0.5s ease-in 100ms;    
+}
+form{
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--cinza-2);
+    width: 350px;
+}
+a[href="registro.html"]{
+    text-decoration: none;
+    color: var(--link-default);
+}
+a[href="registro.html"]:hover{
+    color: var(--link-default);
+
+}
+footer{
+    width: 100vw;
+    padding: 20;
+    text-align: center;
+    background-color: var(--link-default-hover);
+}
