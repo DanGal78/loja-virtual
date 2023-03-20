@@ -1,9 +1,10 @@
-@import url(index.css);
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url(vars.css);
+@import url(forms.css);
 
-:root{
-    --login-gradient-point1: #b8a8a8;
-    --login-gradient-point2: #fff;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -26,34 +27,7 @@ main{
     justify-content: space-between;
     min-height: 250px;
 }
-.form-group{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-top: 15px;
-}
 
-.form-group > input{
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--newsletter-input-bg);
-    margin-top: 5px;
-}
-
-.button-login{
-    padding: 8px;
-    border-radius: 7px;
-    border: none;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    float: right;
-    cursor: pointer;
-    background-color: rgb(70,65,65);
-    color: #fff; 
-
-
-}
 .login-footer{
     border-top: 1px solid #b9b8b8;
     padding-top: 5px;

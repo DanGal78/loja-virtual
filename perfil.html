@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,33 +8,87 @@
     <title>Perfil | Minha Loja</title>
     <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/perfil.css">
+
 <body>
-    <h1>Meu Perfil</h1>
+    <nav>
+        <h1>Minha Loja</h1>
+        <div class="user-menu">
+            <a href="perfil.html">
+                <i class="fa fa-user"></i>
+                <span>Perfil</span>
+            </a>
+            <a href="#">
+                <i class="fa fa-heart"></i>
+                <span>Favorito</span>
+            </a>
+            <a href="checkout.html">
+                <i class="fa fa-shopping-cart"></i>
+                <span>Carrinho</span>
+            </a>
+        </div>
+    </nav>
+
     <section class="user-details">
-        <aside>
-            <img src="img/user-default.png" alt="">
+        <h1>Meu Perfil</h1>
+        <aside class="user-profile">
+            <img src="img/user-default.png" class="user-img" alt="">
             <span>Daniel Galdino</span>
             <a href="#editar">Editar</a>
         </aside>
-        <main>
-            <form action="">
+        <main id="editar">
+            <form action="" id="edit-form">
                 <div class="form-group">
                     <label for="nome">Nome</label>
-                    <input type="text" nome="nome" id="nome">
+                    <input type="text" name="nome" id="nome">
                 </div>
                 <div class="form-group">
                     <label for="email">E-mail:</label>
-                    <input type="text" nome="email" id="email">
+                    <input type="text" name="email" id="email">
                 </div>
                 <button class="button-login">Salvar
                     <i class="fa fa-floppy-o"></i>
-                    
-
                 </button>
             </form>
+            <div class="collapse">
+                <a class="button collapse-button" type="button">Endereço</a>
+                <form id="form-endereco">
+                    <div class="form-group">
+                        <label for="rua">Rua:</label>
+                        <input type="text" name="rua" id="rua">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="numero">Númnumero</label>
+                        <input type="text" name="numero" id="numero">
+                    </div>
+                    <div class="form-group">
+                        <label for="cep">Cep:</label>
+                        <input type="text" name="cep" id="cep">
+                    </div>
+                    <div class="form-group">
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" name="bairro" id="bairro">
+                    </div>
+                    <div class="form-group">
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" name="cidade" id="cidade">
+                    </div>
+                    <div class="form-group">
+                        <label for="uf">Estestado:</label>
+                        <input type="text" name="uf" id="uf">
+                    </div>
+
+
+                </form>
+            </div>
         </main>
 
     </section>
-    
+    <section>
+        <p>
+            &copy; Minha Loja - Todos Direitos Resevados
+        </p>
+    </section>
 </body>
+
 </html>
