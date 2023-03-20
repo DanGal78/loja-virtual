@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Login</title>
-    <link rel="stylesheet" href="/Loja Virtual/css/login.css">
+    <title>Login | Minha Loja</title>
+    <link rel="stylesheet" href="css/login.css">
+
 </head>
+
 <body>
-    <header>
-        <h1>Faca login para: Minha noticias</h1>
-    </header>
-<main>
-    <form action="">
+    <main>
+        <h1>Faça login</h1>
+        <form action="">
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" required id="email" nome="email" placeholder="danoligal@gmail.com" />
+            </div>
 
-        <div class="form-row">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" required placeholder="email@dominio.com">
-        </div>
-
-        <div class="form-row">
-            <label for="senha">Senha</label>
-            <input type="password" id="senha" name="senha" required minlength="8" placeholder="Digite sua Senha">
-        </div>
-
-        <div class="form-row">
-            <button type="submit" class="button button-success">Logar-se</button>
-            <button type="reset" class="button button-danger">Apagar Formulario</button>
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" required id="senha" nome="senha">
+            </div>
+            <button type="submit" class="button-login">Entrar <i class="fa fa-sign-in"></i></button>
+        </form>
+        <div class="login-footer">
+            <span>Não possui cadastro? <a href="registro.html">Crie sua conta</a></span>
         </div>
         
-    </form>
-<a href="registro.html">Cadastres-se</a>
-</main>
-<footer>
-    Todos os direitos reservados &copy;- Academia do desenvolvedor
-</footer>
+    </main>
 
-    
+
+    <footer>
+        Todos os direitos reservados &copy;- Academia do desenvolvedor
+    </footer>
 </body>
+
 </html>

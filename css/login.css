@@ -1,100 +1,73 @@
+@import url(index.css);
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 :root{
-    --branca: #FFFFFF;
-    --danger: #ea0e0e;
-    --danger-hover: #ff5757;
-    --success: #008702;
-    --success-hover: #0ad00d;
-    --link-default:#52ccfc;
-    --link-default-hover: #00b7ff;
-    --cinza-1: #e4e4e4;
-    --cinza-2: #c3c3c3;
-    --conza-3: #f1f1f1;
-    --verde-1: #
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;    
+    --login-gradient-point1: #b8a8a8;
+    --login-gradient-point2: #fff;
 }
 
 body{
-    font-family: Roboto, sans-serif;
-    font-size: 14px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    min-height: 100vh;
-    background-color: var(--branca);
-}
-
-h1{
-    color: #04AA6D;
-    text-align: center;
-}
-
-input{
-    height: 30px;
-    border: none;
-    background-color:var(--cinza-1);
-    border-radius: 7px;
-    width: 100%;
-    padding: 10px;
-}
-
-.form-row{
-    margin-top: 15px;
-    width: 100%;
-}
-
-label{
-    display: block;
-    padding-left: 5px;
-    padding-bottom: 5px;
-}
-.button{
-    padding: 8px;
-    border: none;
-    border-radius: 6px;
-}
-.button-success{
-    background-color: var(--success);
-    color: var(--branca);
-}
-
-.button-success:hover{
-    background-color: var(--success-hover);
-    transition: background-color 0.5s ease-in 100ms;
-
-}
-.button-danger{
-    background-color: var(--danger);
-    color: var(--branca)
-}
-.button-danger:hover{
-    background-color: var(--danger-hover);
-    color: var(--branca);
-    transition: background-color 0.5s ease-in 100ms;    
-}
-form{
-    margin-bottom: 15px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid var(--cinza-2);
-    width: 350px;
-}
-a[href="registro.html"]{
-    text-decoration: none;
-    color: var(--link-default);
-}
-a[href="registro.html"]:hover{
-    color: var(--link-default);
-
-}
-footer{
+    justify-content: center;
     width: 100vw;
-    padding: 20;
-    text-align: center;
-    background-color: var(--link-default-hover);
+    height: 100vh;
+    background-image: linear-gradient(to right, var(--login-gradient-point1), var(--login-gradient-point2)) ;
+
+}
+
+main{
+    border: 1px solid var(--navbar-bg);
+    padding: 20px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 250px;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.form-group > input{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--newsletter-input-bg);
+    margin-top: 5px;
+}
+
+.button-login{
+    padding: 8px;
+    border-radius: 7px;
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    float: right;
+    cursor: pointer;
+    background-color: rgb(70,65,65);
+    color: #fff; 
+
+
+}
+.login-footer{
+    border-top: 1px solid #b9b8b8;
+    padding-top: 5px;
+    
+}
+.login-footer > span{
+    font-size: 1em;
+    font-weight: 500;
+}
+.login-footer > span > a{
+    font-size: 1em;
+    color: rgb(70,65,65);
+    text-decoration: underline;
+}
+.login-footer > span >a:hover{
+    filter: contrast(80%);
 }
