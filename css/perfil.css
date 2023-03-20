@@ -100,6 +100,12 @@ nav{
 .user-menu > a >span{
     font-size: .6em;
 }
+footer{
+    text-align: center;
+    background-color: #000;
+    color: var(--navbar-color);
+    padding: 10px 0;
+}
 
 
 
