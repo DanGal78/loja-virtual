@@ -50,7 +50,12 @@
                 </button>
             </form>
             <div class="collapse">
-                <a class="button collapse-button" type="button">Endereço</a>
+                
+                <input type="checkbox" class="collapse-button" id="endereco-button">
+                <label for="endereco-button">
+                Endereço
+                <i class="fa fa-chevron-down"></i>
+                </label>
                 <form id="form-endereco">
                     <div class="form-group">
                         <label for="rua">Rua:</label>
@@ -58,7 +63,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="numero">Númnumero</label>
+                        <label for="numero">Número</label>
                         <input type="text" name="numero" id="numero">
                     </div>
                     <div class="form-group">
@@ -74,21 +79,55 @@
                         <input type="text" name="cidade" id="cidade">
                     </div>
                     <div class="form-group">
-                        <label for="uf">Estestado:</label>
+                        <label for="uf">Estado:</label>
                         <input type="text" name="uf" id="uf">
                     </div>
-
+                    <button class="button-login">Salvar
+                        <i class="fa fa-floppy-o"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="collapse">
+                <input type="checkbox" class="collapse-button" id="pagamento-button">
+                <label for="pagamento-button">
+                    Dados de Pagamento
+                    <i class="fa fa-chevron-down"></i>
+                </label>
+                <form action="" id="form-pagamento">
+                    <div class="form-group">
+                        <label for="cpf">CPF:</label>
+                        <input type="text" name="cpf" id="cpf">
+                    </div>
+                    <div class="form-group">
+                        <label for="nome-cartao">Nome Impresso no cartão</label>
+                        <input type="text" name="nome-cartao" id="nome-cartao">
+                    </div>
+                    <div class="form-group">
+                        <label for="cartao-numero">Número do cartão</label>
+                        <input type="text" name="cartao-numero" id="cartao-numero">
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" name="cvv" id="cvv">
+                    </div>
+                    <div class="form-group">
+                        <label for="validade-cartao">Validade:</label>
+                        <input type="text" name="validade-cartao" id="validade-cartao">
+                    </div>
+                    <button class="button-login">Salvar
+                        <i class="fa fa-floppy-o"></i>
+                    </button>
 
                 </form>
             </div>
         </main>
 
     </section>
-    <section>
+    <footer>
         <p>
             &copy; Minha Loja - Todos Direitos Resevados
         </p>
-    </section>
+    </footer>
 </body>
 
 </html>
