@@ -10,7 +10,7 @@
     
 </head>
 
-<body>
+<body onload="main()">
     <nav>
         <a href="#">
             <h1>Minha Loja</h1>
@@ -52,118 +52,7 @@
     </header>
     <section id="ofertas">
         <h1>Conheça nossa ofertas</h1>
-        <div class="lista-ofertas">
-
-            <div class="card">
-                <img src="/Loja Virtual/img/laptop.webp" alt="Foto ilustrativa do Produto">
-                <h3>Fone Bluetooth</h3>
-                <span>R$ 75,98
-                    <span class="tooltip">
-                        <i class="fa fa-question"></i>
-                        <span class="tooltip-text">Descrição da interrogação aqui</span>
-                    </span>
-                </span>
-                <div class="stars">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-                <div class="group-button">
-
-                    <a href="" class="card-button">
-                        Adicinar ao Carrinho
-                        <i class=" fa fa-shopping-cart"></i>
-                    </a>
-                    <a href="" class="favorito-button">
-                        <i class="fa fa-heart"></i>
-                    </a>
-                </div>
-
-            </div>
-            <div class="card">
-                <img src="/Loja Virtual/img/laptop.webp" alt="Foto ilustrativa do Produto">
-                <h3>Fone Bluetooth</h3>
-                <span>R$ 75,98
-                    <span class="tooltip">
-                        <i class="fa fa-question"></i>
-                        <span class="tooltip-text">Valor Promocional, enquanto durarem o estoque</span>
-                    </span>
-                </span>
-                <div class="stars">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-
-                </div>
-                <div class="group-button">
-
-                    <a href="" class="card-button">
-                        Adicinar ao Carrinho
-                        <i class=" fa fa-shopping-cart"></i>
-                    </a>
-                    <a href="" class="favorito-button">
-                        <i class="fa fa-heart"></i>
-                    </a>
-                </div>
-
-            </div>
-            <div class="card">
-                <img src="/Loja Virtual/img/laptop.webp" alt="Foto ilustrativa do Produto">
-                <h3>Fone Bluetooth</h3>
-                <span class="tooltip">R$ 75,98
-                    <span class="tooltip-text" style="background-color: var(--button-primary-bg);">Este tooltip esta
-                        escondido no texto</span>
-                </span>
-                <div class="stars">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-
-                </div>
-                <div class="group-button">
-
-                    <a href="" class="card-button">
-                        Adicinar ao Carrinho
-                        <i class=" fa fa-shopping-cart"></i>
-                    </a>
-                    <a href="" class="favorito-button">
-                        <i class="fa fa-heart"></i>
-                    </a>
-                </div>
-
-            </div>
-            <div class="card">
-                <img src="/Loja Virtual/img/laptop.webp" alt="Foto ilustrativa do Produto">
-                <h3>Fone Bluetooth</h3>
-                <span>R$ 75,98</span>
-                <div class="stars">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-
-                </div>
-                <div class="group-button">
-
-                    <a href="" class="card-button">
-                        Adicinar ao Carrinho
-                        <i class=" fa fa-shopping-cart"></i>
-                    </a>
-                    <a href="" class=favorito-button>
-                        <i class="fa fa-heart"></i>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-
+        <div class="lista-ofertas"></div>
 
     </section>
     <section id="newsletter">
@@ -218,6 +107,40 @@
             </div>
         </div>
     </footer>
+    <div style="display: none ;" id="card-modelo">
+        <div class="card">
+            <a href="{link-produto}">
+            <img src="{imagem-produto}" class="imagem-produto" alt="{descricao-imagem-produto}">
+            </a>
+            <a href="{link-produto}">
+            <h3 class="titulo-produto">{titulo-produto}</h3>
+            </a>
+            <span>{preco-produto}</span>
+           
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+
+            </div>
+            <div class="group-button">
+
+                <a href="" class="card-button">
+                    Adicinar ao Carrinho
+                    <i class=" fa fa-shopping-cart"></i>
+                </a>
+                <a href="" class="favorito-button">
+                    <i class="fa fa-heart"></i>
+                </a>
+            </div>
+
+        </div>
+    
+    
+    </div>
+    <script type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>
