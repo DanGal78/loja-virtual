@@ -25,3 +25,10 @@
     background-color: rgb(70,65,65);
     color: #fff; 
 }
+.message-error{
+    color: var(--button-danger-bg);
+    font-weight: bold;
+}
+.input-error{
+    border: 1px solid var(--button-danger-bg:);
+}
