@@ -44,7 +44,6 @@ function validaFormulario(){
     }
     
    
-
    function setErro(messageClass, input, mensagem = ""){
     var mensagemBox = document.getElementsByClassName(`message-error ${messageClass}`)[0];
         mensagemBox.innerHTML = mensagem;
