@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finalize sua Compra</title>
-    <link rel="stylesheet" href="/Loja Virtual/css/chekout.css">
+    <link rel="stylesheet" href="css/chekout.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body onload="main()">
     <header>
 
         <h1>Minha Loja</h1>
@@ -29,8 +29,8 @@
             <div class="steps">
                 <h2>Metodos de Pagamento</h2>
                 <div class="pagamento">
-                    <img src="master.png" width="40px" alt="">
-                    MasterCard (Crédito) <span>Termina em 1234</span>
+                    <img src="img/master.png" width="40px" alt="">
+                    MasterCard (Crédito) <span>Termina em 123</span>
                 </div>
                 <a>Alterar</a>
 
@@ -38,12 +38,7 @@
             <div class="steps" id="items">
                 <h2>Itens para envio</h2>
                 <div class="items-container">
-                <div class="item">
-                    <img src="hedfone.webp">
-                    <h3>Fone Bluetooth</h3>
-                    <span>Qtd: 2</span>
-                    <span class="preco">R$ 75,98</span>
-                </div>
+                
             </div>
             <button class="finalizar-pedido">Finalizar Pedido</button>
         </div>
@@ -71,6 +66,7 @@
     <footer>
         &copy; Minha Loja - Todos os direitos reservados
     </footer>
+    <script type="text/javascript" src="chekout.js"></script>
 
 </body>
 
